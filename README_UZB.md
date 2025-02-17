@@ -144,7 +144,7 @@ SI ma'lumotlarini tartibga solish algoritmini ishlab chiqish va uni sozlashni tu
     Va chuqur sikllar va shartlar kiritilishi amalga oshirilmasin.
     Algoritmlarning > 3 darajada kiritilishiga dosh berolmayman.
 
-***== Quest 2 qabul qilindi. src/fastjsort.с dasturini yaratish, u nlog(n) dan yuqori boʻlmagan hisoblash murakkabligining nazariy baholariga ega bo’lgan ikki xil tartiblash algoritmidan foydalangan holda 10 ta butun elementdan iborat massivni oʻsish tartibida tartiblashi kerak (masalan, tez va piramidal tartib). stdout da birinchi qatorda tartiblangan massivni birinchi algoritm yordamida, ikkinchi qatorda mos ravishda ikkinchi algoritmdan foydalanib chiqarish. stdlib.h va begona kutubxonalaridan foydalanish mumkin emas. Strukturaviy dasturlash tamoyillariga amal qiling. Massivni funksiyaga faqat ko‘rsatgich orqali o‘tkazish mumkin. Xato bo'lsa, "n/a" chiqariladi. ==***
+***== Quest 2 qabul qilindi. src/fast_sort.с dasturini yaratish, u nlog(n) dan yuqori boʻlmagan hisoblash murakkabligining nazariy baholariga ega bo’lgan ikki xil tartiblash algoritmidan foydalangan holda 10 ta butun elementdan iborat massivni oʻsish tartibida tartiblashi kerak (masalan, tez va piramidal tartib). stdout da birinchi qatorda tartiblangan massivni birinchi algoritm yordamida, ikkinchi qatorda mos ravishda ikkinchi algoritmdan foydalanib chiqarish. stdlib.h va begona kutubxonalaridan foydalanish mumkin emas. Strukturaviy dasturlash tamoyillariga amal qiling. Massivni funksiyaga faqat ko‘rsatgich orqali o‘tkazish mumkin. Xato bo'lsa, "n/a" chiqariladi. ==***
 
 | Kiruvchi ma’lumotlar | Chiquvchi ma’lumotlar |
 | ------ | ------ |
