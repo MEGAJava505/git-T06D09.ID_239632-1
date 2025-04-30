@@ -35,7 +35,7 @@ check your program and its source code for the following points:
   You need to type the following commands in this case.   
   ```sh
   cd /usr/local/lib  
-  sudo ln -s /Applications/Xcode.app/Contents/Developer/usr/lib/libLeaksAtExit.dylib
+  ln -s /Applications/Xcode.app/Contents/Developer/usr/lib/libLeaksAtExit.dylib
   ```
 
   _Additionally:_  \

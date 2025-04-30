@@ -122,7 +122,7 @@ You see the following text on the screen:
 After talking to the AI, you have little choice. If you want to get out of the room, you will need to help it organize the data in memory, without access to the stdlib.h library since the AI is unable to access it. \
 Do not forget about the principles of structured programming: the AI might want to analyze your code.
 
-***== Quest 1 received. Create an src/sort.c program that expects an stdin array with the length of 10 integers for input and outputs the same array sorted in ascending order. Arrange the functions of reading, sorting and output of the array separately. You can use any sorting algorithm. Using stdlib.h is not allowed. Passing an array to a function only by pointer. For errors, display "n/a". ==***
+***== Quest 1 received. Create an src/sort.c program that expects an stdin array with the length of 10 integers for input and outputs the same array sorted in ascending order. Arrange the functions of reading, sorting and output of the array separately. You can use any sorting algorithm. Using stdlib.h is not allowed. Passing an array to a function only by pointer. For errors, display "n/a". It is forbidden to make system calls using the system() function and other similar functions that can access the system kernel directly. This prohibition applies to all subsequent quests ==***
 
 | Input | Output |
 | ------ | ------ |

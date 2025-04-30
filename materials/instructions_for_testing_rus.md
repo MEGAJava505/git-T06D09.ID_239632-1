@@ -31,7 +31,7 @@
   В этом случае вам необходимо ввести следующие команды:
   ```sh
   cd /usr/local/lib  
-  sudo ln -s /Applications/Xcode.app/Contents/Developer/usr/lib/libLeaksAtExit.dylib
+  ln -s /Applications/Xcode.app/Contents/Developer/usr/lib/libLeaksAtExit.dylib
   ```
 
   _Дополнительно:_ \
