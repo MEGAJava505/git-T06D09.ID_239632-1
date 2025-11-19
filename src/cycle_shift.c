@@ -11,25 +11,21 @@ int main() {
   int n, c;
   int a[MAX];
 
-  // 1. читаем n строго
   if (!scan_single_int(&n) || n <= 0 || n > MAX) {
     printf("n/a");
     return 0;
   }
 
-  // 2. читаем массив ровно из n чисел
   if (!scan_array(a, n)) {
     printf("n/a");
     return 0;
   }
 
-  // 3. читаем c строго
   if (!scan_single_int(&c)) {
     printf("n/a");
     return 0;
   }
 
-  // выполнение сдвига
   shift(a, n, c);
   output(a, n);
 
