@@ -3,23 +3,20 @@
 
 int read_array(int *arr) {
   char line[256];
-  if (!fgets(line, sizeof(line), stdin))
-    return 0;
+  if (!fgets(line, sizeof(line), stdin)) return 0;
 
   int count = 0;
   char *ptr = line;
   while (count < SIZEOF) {
     int n;
     int chars;
-    if (sscanf(ptr, "%d%n", &n, &chars) != 1)
-      break;
+    if (sscanf(ptr, "%d%n", &n, &chars) != 1) break;
     arr[count++] = n;
     ptr += chars;
   }
 
   int extra;
-  if (sscanf(ptr, "%d", &extra) == 1)
-    return 0;
+  if (sscanf(ptr, "%d", &extra) == 1) return 0;
 
   return (count == SIZEOF);
 }
@@ -38,8 +35,7 @@ void sort_array(int *arr) {
 
 void print_array(int *arr) {
   for (int i = 0; i < SIZEOF; i++) {
-    if (i > 0)
-      printf(" ");
+    if (i > 0) printf(" ");
     printf("%d", arr[i]);
   }
   printf("\n");
