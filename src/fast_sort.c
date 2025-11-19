@@ -5,36 +5,43 @@
 // ------ Ввод массива ------
 int read_array(int *arr) {
   char line[256];
-  if (!fgets(line, sizeof(line), stdin)) return 0;
+  if (!fgets(line, sizeof(line), stdin))
+    return 0;
 
   int count = 0;
   char *ptr = line;
   while (count < SIZE) {
     int num, len;
-    if (sscanf(ptr, "%d%n", &num, &len) != 1) break;
+    if (sscanf(ptr, "%d%n", &num, &len) != 1)
+      break;
     arr[count++] = num;
     ptr += len;
   }
 
-  if (count != SIZE) return 0;
+  if (count != SIZE)
+    return 0;
 
   int extra;
-  if (sscanf(ptr, "%d", &extra) == 1) return 0;
+  if (sscanf(ptr, "%d", &extra) == 1)
+    return 0;
 
   return 1;
 }
 
 // ------ QuickSort ------
 void quick_sort(int *arr, int low, int high) {
-  if (low >= high) return;
+  if (low >= high)
+    return;
 
   int i = low;
   int j = high;
   int pivot = arr[(low + high) / 2];
 
   while (i <= j) {
-    while (arr[i] < pivot) i++;
-    while (arr[j] > pivot) j--;
+    while (arr[i] < pivot)
+      i++;
+    while (arr[j] > pivot)
+      j--;
 
     if (i <= j) {
       int t = arr[i];
@@ -45,8 +52,10 @@ void quick_sort(int *arr, int low, int high) {
     }
   }
 
-  if (low < j) quick_sort(arr, low, j);
-  if (i < high) quick_sort(arr, i, high);
+  if (low < j)
+    quick_sort(arr, low, j);
+  if (i < high)
+    quick_sort(arr, i, high);
 }
 
 // ------ HeapSort ------
@@ -55,8 +64,10 @@ void heapify(int *arr, int n, int i) {
   int l = 2 * i + 1;
   int r = 2 * i + 2;
 
-  if (l < n && arr[l] > arr[largest]) largest = l;
-  if (r < n && arr[r] > arr[largest]) largest = r;
+  if (l < n && arr[l] > arr[largest])
+    largest = l;
+  if (r < n && arr[r] > arr[largest])
+    largest = r;
 
   if (largest != i) {
     int t = arr[i];
@@ -82,7 +93,8 @@ void heap_sort(int *arr) {
 // ------ Вывод массива ------
 void print_arr(int *arr) {
   for (int i = 0; i < SIZE; i++) {
-    if (i > 0) printf(" ");
+    if (i > 0)
+      printf(" ");
     printf("%d", arr[i]);
   }
   printf("\n");
@@ -98,7 +110,8 @@ int main() {
   }
 
   // Копируем arr1 в arr2
-  for (int i = 0; i < SIZE; i++) arr2[i] = arr1[i];
+  for (int i = 0; i < SIZE; i++)
+    arr2[i] = arr1[i];
 
   quick_sort(arr1, 0, SIZE - 1);
   heap_sort(arr2);
